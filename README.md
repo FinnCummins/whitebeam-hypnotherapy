@@ -1,2 +1,1 @@
-
-#Whitebeam Hypnotherapy
+# Whitebeam Hypnotherapy
