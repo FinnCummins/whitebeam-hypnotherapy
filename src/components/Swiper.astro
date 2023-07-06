@@ -1,18 +1,19 @@
 ---
+import SlideCard from "./SliderCard.astro";
 ---
 
-<div id="testimonials" class="swiper">
+<div id="testimonials" class="swiper my-16">
 
   <div class="swiper-wrapper">
     <!-- Slides -->
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide"><SlideCard title="Well lad" text="Hey my name is Aisling Cranley"/></div>
+    <div class="swiper-slide"><img class="h-48 w-1/16 m-4" src="WhitebeamLogo.jpg" /></div>
+    <div class="swiper-slide"><img class="h-48 w-1/16 m-4" src="WhitebeamLogo.jpg" /></div>
   </div>
 
   <div class="swiper-pagination"></div>
 
-  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-prev hover:bg-slate-200"></div>
   <div class="swiper-button-next"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
