@@ -4,12 +4,13 @@ export interface props {
     title: string;
     text: string;
     src: string;
+    delay: string;
 }
 
-const {title, text, src} = Astro.props;
+const {title, text, src, delay} = Astro.props;
 ---
 
-<div class="info-card flex flex-col items-center text-center h-1/4 w-1/4 bg-wb-muted-mint rounded-lg p-8 opacity-0 transition-all transform ease-out duration-700 translate-y-10 hover:bg-wb-pale-peach">
+<div class="info-card flex flex-col items-center text-center h-1/4 w-1/4 bg-wb-muted-mint rounded-lg p-8 opacity-0 transition-all transform ease-out duration-{delay} translate-y-10 hover:bg-wb-pale-peach">
     <img></img>
     <h1 class="font-semibold mb-4">{title}</h1>
     <p>
