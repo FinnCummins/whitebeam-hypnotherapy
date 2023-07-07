@@ -4,14 +4,13 @@ export interface props {
     title: string;
     text: string;
     src: string;
-    delay: string;
+    delay: number;
 }
 
 const {title, text, src, delay} = Astro.props;
 ---
 
-<div class="info-card flex flex-col items-center text-center h-1/4 w-1/4 bg-wb-muted-mint rounded-lg p-8 opacity-0 transition-all transform ease-out duration-{delay} translate-y-10 hover:bg-wb-pale-peach">
-    <img></img>
+<div class=`info-card flex flex-col items-center text-center h-1/4 w-1/4 bg-wb-muted-mint rounded-lg p-8 opacity-0 transition-all transform ease-out delay-${delay} duration-1000 translate-y-10 hover:bg-wb-pale-peach`>
     <h1 class="font-semibold mb-4">{title}</h1>
     <p>
         {text}
@@ -29,7 +28,7 @@ const {title, text, src, delay} = Astro.props;
                     infoCards[i].classList.add("opacity-100", "translate-y-0");
                 }
             }
-            console.log("hey");
+
         });
 
         window.addEventListener("scroll", function() {
