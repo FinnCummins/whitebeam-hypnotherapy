@@ -10,7 +10,7 @@ export interface props {
 const {title, text, src, delay} = Astro.props;
 ---
 
-<div class=`info-card flex flex-col items-center text-center h-1/4 w-1/4 bg-wb-muted-mint rounded-lg p-8 opacity-0 transition-all transform ease-out delay-${delay} duration-1000 translate-y-10 hover:bg-wb-pale-peach`>
+<div class=`info-card flex flex-col items-center text-center my-4 h-1/4 w-3/4 bg-wb-muted-mint rounded-lg p-8 opacity-0 transition-all transform ease-out delay-${delay} duration-1000 translate-y-10 hover:bg-wb-pale-peach md:w-1/4`>
     <h1 class="font-semibold mb-4">{title}</h1>
     <p>
         {text}
