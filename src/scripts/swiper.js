@@ -1,25 +1,24 @@
-import Swiper from "swiper/bundle";
+import Swiper, { Autoplay, Navigation, EffectCoverflow } from "swiper";
+Swiper.use([Autoplay, Navigation, EffectCoverflow]);
 
-const swiper = new Swiper('.swiper', {
-
-    slidesPerView: 1,
+const swiper = new Swiper('#testimonial-swiper', {
+    slidesPerView: 3,
     centeredSlides: true,
     loop: true,
-
     autoplay: {
       delay: 5000,
     },
-
-    direction: 'horizontal',
-    loop: true,
-  
-    pagination: {
-      el: '.swiper-pagination',
+    effect: 'coverflow',
+    grabCursor: true,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
     },
-  
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-
 });

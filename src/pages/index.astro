@@ -8,12 +8,12 @@ import ContactForm from "../components/ContactMe.astro";
 
 <Layout title="Whitebeam Wellbeing  – Mental Health and Wellbeing Coach, Clinical Hypnotherapy">
     <Welcome />
-    <div id="what-i-do" class="flex flex-row items-center justify-between m-12 mt-24">
-        <InfoCard delay={500} title="Unlock your best self" text="This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. "/>
-        <InfoCard delay={700} title="Unconscious behaviours" text="This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. "/>
+    <div id="what-i-do" class="flex flex-col items-center justify-center m-12 mt-24 md:flex-row md:justify-between">
+        <InfoCard delay={500} title="Unlock your best self" text="This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. " className="mb-4 md:mb-0"/>
+        <InfoCard delay={700} title="Unconscious behaviours" text="This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. " className="mb-4 md:mb-0"/>
         <InfoCard delay={1000} title="Overcome limiting beliefs" text="This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. This info card is great. "/>
     </div>
-    <Swiper />
+
     <ContactForm />
 </Layout>
 

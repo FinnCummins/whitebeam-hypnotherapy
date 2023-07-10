@@ -1,5 +1,4 @@
 ---
-
 export interface props {
     title: string;
     text: string;
@@ -9,9 +8,18 @@ export interface props {
 const {title, text, src} = Astro.props;
 ---
 
-<div class="flex flex-col items-center text-center h-48 w-600 ml-36 my-8 bg-wb-muted-mint rounded-lg p-8 hover:bg-wb-pale-peach">
+<div class="flex flex-col items-center text-center h-auto w-full md:w-1/2 mx-auto bg-wb-muted-mint rounded-lg p-8">
     <h1 class="font-semibold mb-4">{title}</h1>
-    <p>
-        {text}
-    </p>
+    <p>{text}</p>
 </div>
+
+<style>
+    .swiper-slide {
+        opacity: 0.3; /* Start off faded out */
+        transition: opacity 0.3s;
+    }
+
+    .swiper-slide-active {
+        opacity: 1 !important; /* Be fully visible when active */
+    }
+</style>
