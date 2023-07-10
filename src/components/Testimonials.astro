@@ -1,0 +1,74 @@
+---
+---
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, { padding: 200 });
+
+    function autoplay() {
+      instances.forEach(instance => {
+        instance.next();
+      });
+      setTimeout(autoplay, 7000);
+    }
+    autoplay();
+  });
+</script>  
+
+<div class="carousel my-20">
+    <a class="carousel-item" href="#">
+        <div class="testi">
+            <div class="img-area">
+                <img src="femaleHeadshotIcon.jpg">
+            </div>
+            <p>"Good morning Aisling. It's been 2 weeks already but it's been great. I feel like I've more
+energy, sleeping better, my thinking is
+clearer, there is no bloating, feel in control, no
+cravings, can easily and happily say no to
+sweets and I'm sticking to 3 meals a day. Feel
+so much better. I had my few drinks just
+on a sat eve and some chocolate and
+I'm completely content with that for the
+week. Still finding it a little hard to get
+the walk in everyday but I'm hoping to
+improve over next week or two when things
+ease off with the kids. "</p>
+        </div>
+    </a>
+    <a class="carousel-item" href="#">
+        <div class="testi">
+            <div class="img-area">
+                <img src="maleHeadshotIcon.jpg">
+            </div>
+            <p>"I'm Feeling very focused and
+amazing. Thank you, I didn't
+weigh myself until Friday so I
+will let you know at the end of
+the week in that regard. Started
+walking on the treadmill again
+so that recording is giving me
+an extra boost.
+"</p>
+        </div>
+    </a>
+    <a class="carousel-item" href="#">
+        <div class="testi">
+            <div class="img-area">
+                <img src="femaleHeadshotIcon.jpg">
+            </div>
+            <p>"I am doing amazing Aisling. I haven't been on the
+scales this week because I'm not dieting but I feel
+much stronger this week even compared to last week. It has
+not bothered me at all to eat outside of my meals.
+I wouldn't even look at a bag of crisps. I am actually
+shocked & can't believe how I can go from being so
+caught up in a evil cycle that I really thought I could
+get out of to feeling so good. I'm delighted with everything so far.
+Thank you so much."</p>
+        </div>
+    </a>
+</div>
