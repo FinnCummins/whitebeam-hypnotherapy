@@ -9,6 +9,7 @@ module.exports = {
 				"wb-muted-mint" : "#B4D7C9",
 				"wb-dark-gray" : "#333333",
 				"wb-pale-peach" : "#FFDAB9",
+				"quote-green" : "#6CB89A",
 			},
 
 			width: {
