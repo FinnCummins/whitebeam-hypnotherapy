@@ -26,7 +26,7 @@ module.exports = {
 			},
 
 			backgroundImage: theme => ({
-				'fade-gradient': 'linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))'
+				'fade-gradient': 'linear-gradient(rgba(255, 255, 240, 1) 0%, rgba(255, 255, 240, 0.3) 70%, rgba(255, 255, 240, 0) 100%)'
 			})
 
 		},
