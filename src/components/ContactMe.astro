@@ -1,7 +1,7 @@
 ---
 const styles = {
-  container: 'flex h-screen bg-gray-100 my-10 mx-10',
-  form: 'bg-white shadow-xl rounded px-8 pt-6 pb-8 mb-4 w-3/4 md:w-1/2',
+  container: 'flex flex-col-reverse h-screen bg-gray-100 mb-8 mt-96 mx-10 md:flex-row md:mt-0',
+  form: 'bg-white shadow-xl rounded px-8 pt-6 pb-12 mb-4 mt-30 ml-16 mb-16 items-center w-3/4 md:w-1/2 md:mt-0 md:ml-0 md:mb-0',
   heading: 'text-2xl text-gray-700 text-center mb-4',
   field: 'mb-4',
   label: 'block text-gray-700 text-sm font-bold mb-2',
@@ -11,7 +11,7 @@ const styles = {
 };
 
 ---
-<div class={styles.container} id="contact" class="flex flex-row justify-between">
+<div class={styles.container} id="contact">
   <form class={styles.form}>
     <h2 class={styles.heading}>Contact me</h2>
     <div class={styles.field}>
@@ -35,7 +35,7 @@ const styles = {
     </div>
   </form>
 
-  <div id="contact-details" class="flex flex-col text-center mx-8 items-center">
+  <div id="contact-details" class="flex flex-col text-center mx-8 items-center mt-32 md:mt-0">
     <h1 class="mx-8 text-2xl bg-wb-pale-peach rounded-lg p-4">
       The secrets are in my questions, the magic is in your answers ❤️
     </h1>
