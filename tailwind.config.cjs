@@ -23,7 +23,11 @@ module.exports = {
 				'112': '28rem',
 				'116': '29rem',
 				'120': '30rem'
-			  }
+			},
+
+			backgroundImage: theme => ({
+				'fade-gradient': 'linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))'
+			})
 
 		},
 	},
